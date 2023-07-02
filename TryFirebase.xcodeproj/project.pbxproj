@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5100F162A16574300A5DD42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5100F152A16574300A5DD42 /* GoogleService-Info.plist */; };
 		B53AF6952A2694B40072682A /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF6942A2694B40072682A /* iPhoneNumberField */; };
 		B53AF6982A26953C0072682A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF6972A26953C0072682A /* FirebaseAnalytics */; };
 		B53AF69A2A26953C0072682A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF6992A26953C0072682A /* FirebaseAuth */; };
@@ -24,10 +23,10 @@
 		B5912DD42A51DC040033B8E6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5912DD32A51DC040033B8E6 /* ImageLoader.swift */; };
 		B5912DD62A51DCB40033B8E6 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5912DD52A51DCB40033B8E6 /* FirebaseService.swift */; };
 		B5912DD82A51E0820033B8E6 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5912DD72A51E0820033B8E6 /* MailView.swift */; };
+		B5912DDA2A51E4040033B8E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5912DD92A51E4040033B8E6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B5100F152A16574300A5DD42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B53AF6A12A26A3780072682A /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		B56D77AB2A0B9ABA0052FDFF /* LoadFromApiCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFromApiCollection.swift; sourceTree = "<group>"; };
 		B57EE94229E16CB900489FC8 /* ContactForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactForm.swift; sourceTree = "<group>"; };
@@ -39,6 +38,7 @@
 		B5912DD32A51DC040033B8E6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = TryFirebase/Model/ImageLoader.swift; sourceTree = SOURCE_ROOT; };
 		B5912DD52A51DCB40033B8E6 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		B5912DD72A51E0820033B8E6 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		B5912DD92A51E4040033B8E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 				B58E7B8C29CF3BE800221EFD /* TryFirebaseApp.swift */,
 				B5912DB52A51D9BB0033B8E6 /* View */,
 				B5912DB62A51D9F20033B8E6 /* Model */,
-				B5100F152A16574300A5DD42 /* GoogleService-Info.plist */,
+				B5912DD92A51E4040033B8E6 /* GoogleService-Info.plist */,
 				B58E7B9029CF3BEA00221EFD /* Assets.xcassets */,
 				B58E7B9229CF3BEA00221EFD /* Preview Content */,
 			);
@@ -187,8 +187,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58E7B9429CF3BEA00221EFD /* Preview Assets.xcassets in Resources */,
+				B5912DDA2A51E4040033B8E6 /* GoogleService-Info.plist in Resources */,
 				B58E7B9129CF3BEA00221EFD /* Assets.xcassets in Resources */,
-				B5100F162A16574300A5DD42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
