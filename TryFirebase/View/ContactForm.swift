@@ -17,8 +17,8 @@ struct ContactForm: View {
         NavigationView{
             Form {
                 Section(header: Text("Tell us about yourself 📣")) {
-                    TextField("Name", text: $name)
-                    TextField("Email", text: $replyTo)
+                    EditFieldView(text: $name, placeholder: "Name", isValid: isValidName)
+                    EditFieldView(text: $replyTo, placeholder: "Email", isValid: isValidEmail)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                 }
@@ -60,6 +60,18 @@ struct ContactForm: View {
 
     func sendFormEmail() {
         isShowingMailView = true
+    }
+    
+    private func isValidName(text: String) -> (Bool, String) {
+        return (!text.isEmpty, "Cannot be empty")
+    }
+    
+    private func isValidEmail(text: String) -> (Bool, String) {
+        let emailRegex = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let predicateEmail = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        let isValid =  predicateEmail.evaluate(with: replyTo)
+        let errorMessage = isValid ? "" : "Invalid email"
+        return (isValid, errorMessage)
     }
 }
 
