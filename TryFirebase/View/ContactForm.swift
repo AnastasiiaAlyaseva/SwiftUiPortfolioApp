@@ -10,6 +10,7 @@ struct ContactForm: View {
     @State private var number: String = ""
     @State private var isEditing: Bool = false
     @State private var subjectLine: String = ""
+    @State private var showingAlert = false
     var messegeOptions = ["All", "Request", "Grievance"]
     
     var body: some View {
@@ -38,16 +39,22 @@ struct ContactForm: View {
                     Button(action: {
                         if MailView.canSendMail() {
                             isShowingMailView.toggle()
-                        }  else {
-                            print("Cant use the Simulator, to send Emails.")
                         }
+                        print("Can't use the Simulator, to send Emails.")
+                        showingAlert = true
                     }) {
                         Text("Send your message")
                             .frame(minWidth: 0, maxWidth: .infinity)
                             .padding()
                             .background(Color.mint)
-                            .foregroundColor(Color.black)
                             .cornerRadius(15)
+                    }
+                    .disabled(name.isEmpty || replyTo.isEmpty)
+                    .alert(isPresented:$showingAlert) {
+                        Alert(
+                            title: Text("Your message has been sent"),
+                            dismissButton: .default(Text("Ok"))
+                        )
                     }
                     .fullScreenCover(isPresented: $isShowingMailView) {
                         MailView(name: name, replyTo: replyTo, message: message)
