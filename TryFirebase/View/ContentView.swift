@@ -25,7 +25,7 @@ struct TryFirebaseHomePage: View {
                         .padding(.top)
                         .opacity(isVisible ? 1:0)
                         .offset(y:isVisible ? 0:30)
-                        .animation(Animation.easeOut(duration: 1).delay(0.5))
+                        .animation(.easeOut(duration: 1).delay(0.5), value: isVisible)
                     
                     Image("Anastasiia")
                         .resizable()
@@ -37,11 +37,11 @@ struct TryFirebaseHomePage: View {
                     Text("A Passionate developer who recently started learning Swift and IOS development. Commited to creating high-quality apps and continuously improving skills")
                         .font(.body)
                         .fontWeight(.medium)
-                        .padding(.top)
-                        .multilineTextAlignment(.center)
+                        .padding([.top, .leading, .trailing])
+                        .multilineTextAlignment(.leading)
                         .opacity(isVisible ? 1:0)
                         .offset(y:isVisible ? 0:30)
-                        .animation(Animation.easeOut(duration: 1).delay(0.5))
+                        .animation(.easeOut(duration: 1).delay(0.5), value: isVisible)
                     
                     VStack{
                         NavigationLink(destination: ContactForm()){
