@@ -70,13 +70,15 @@ struct ContactForm: View {
     }
     
     private func isValidName(text: String) -> (Bool, String) {
-        return (!text.isEmpty, "Cannot be empty")
+        let isValid = !text.isEmpty
+        let errorMessage = isValid ? "" : "Cannot be empty"
+        return (isValid, errorMessage)
     }
     
     private func isValidEmail(text: String) -> (Bool, String) {
         let emailRegex = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let predicateEmail = NSPredicate(format: "SELF MATCHES %@", emailRegex)
-        let isValid =  predicateEmail.evaluate(with: replyTo)
+        let isValid =  predicateEmail.evaluate(with: text)
         let errorMessage = isValid ? "" : "Invalid email"
         return (isValid, errorMessage)
     }

@@ -23,3 +23,9 @@ struct EditFieldView: View {
         }
     }
 }
+
+struct EditFieldView_Previews: PreviewProvider {
+    static var previews: some View {
+        EditFieldView(text: .constant("Hello"), placeholder: "Test", isValid: { textNew in (false, "ddddd" )})
+    }
+}

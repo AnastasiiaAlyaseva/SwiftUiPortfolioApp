@@ -24,6 +24,7 @@
 		B5912DD62A51DCB40033B8E6 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5912DD52A51DCB40033B8E6 /* FirebaseService.swift */; };
 		B5912DD82A51E0820033B8E6 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5912DD72A51E0820033B8E6 /* MailView.swift */; };
 		B5912DDA2A51E4040033B8E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5912DD92A51E4040033B8E6 /* GoogleService-Info.plist */; };
+		B5D765512A557FD8002A4342 /* EditFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D765502A557FD8002A4342 /* EditFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		B5912DD52A51DCB40033B8E6 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		B5912DD72A51E0820033B8E6 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		B5912DD92A51E4040033B8E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5D765502A557FD8002A4342 /* EditFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFieldView.swift; sourceTree = "<group>"; };
+		B5D765522A559A12002A4342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		B58E7B8B29CF3BE800221EFD /* TryFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				B5D765522A559A12002A4342 /* Info.plist */,
 				B58E7B8C29CF3BE800221EFD /* TryFirebaseApp.swift */,
 				B5912DB52A51D9BB0033B8E6 /* View */,
 				B5912DB62A51D9F20033B8E6 /* Model */,
@@ -99,9 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				B58E7B8E29CF3BE800221EFD /* ContentView.swift */,
-				B56D77AB2A0B9ABA0052FDFF /* LoadFromApiCollection.swift */,
 				B57EE94229E16CB900489FC8 /* ContactForm.swift */,
+				B5D765502A557FD8002A4342 /* EditFieldView.swift */,
 				B5912DD72A51E0820033B8E6 /* MailView.swift */,
+				B56D77AB2A0B9ABA0052FDFF /* LoadFromApiCollection.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D765512A557FD8002A4342 /* EditFieldView.swift in Sources */,
 				B57EE94329E16CB900489FC8 /* ContactForm.swift in Sources */,
 				B58E7B8F29CF3BE800221EFD /* ContentView.swift in Sources */,
 				B5912DD42A51DC040033B8E6 /* ImageLoader.swift in Sources */,
@@ -338,7 +344,7 @@
 				DEVELOPMENT_TEAM = QGN945XQUG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TryFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -367,7 +373,7 @@
 				DEVELOPMENT_TEAM = QGN945XQUG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TryFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
