@@ -12,6 +12,7 @@ struct ContactForm: View {
     @State private var subjectLine: String = ""
     @State private var showingAlert = false
     var messegeOptions = ["All", "Request", "Grievance"]
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         
@@ -53,7 +54,9 @@ struct ContactForm: View {
                     .alert(isPresented:$showingAlert) {
                         Alert(
                             title: Text("Your message has been sent"),
-                            dismissButton: .default(Text("Ok"))
+                            dismissButton: .default(Text("Ok")) {
+                                self.presentationMode.wrappedValue.dismiss()
+                            }
                         )
                     }
                     .fullScreenCover(isPresented: $isShowingMailView) {
