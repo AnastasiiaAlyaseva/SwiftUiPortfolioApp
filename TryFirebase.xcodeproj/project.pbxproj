@@ -103,10 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				B58E7B8E29CF3BE800221EFD /* ContentView.swift */,
-				B57EE94229E16CB900489FC8 /* ContactForm.swift */,
-				B5D765502A557FD8002A4342 /* EditFieldView.swift */,
-				B5912DD72A51E0820033B8E6 /* MailView.swift */,
-				B56D77AB2A0B9ABA0052FDFF /* LoadFromApiCollection.swift */,
+				B5D170D82A570C6400061FE6 /* MailView */,
+				B5D170D92A570C9100061FE6 /* ImageCollectionView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +117,24 @@
 				B5912DD52A51DCB40033B8E6 /* FirebaseService.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B5D170D82A570C6400061FE6 /* MailView */ = {
+			isa = PBXGroup;
+			children = (
+				B5D765502A557FD8002A4342 /* EditFieldView.swift */,
+				B5912DD72A51E0820033B8E6 /* MailView.swift */,
+				B57EE94229E16CB900489FC8 /* ContactForm.swift */,
+			);
+			path = MailView;
+			sourceTree = "<group>";
+		};
+		B5D170D92A570C9100061FE6 /* ImageCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B56D77AB2A0B9ABA0052FDFF /* LoadFromApiCollection.swift */,
+			);
+			path = ImageCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

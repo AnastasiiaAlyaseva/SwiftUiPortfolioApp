@@ -11,6 +11,7 @@ struct TryFirebaseHomePage: View {
     private let devName = "Anastasiia"
     @State private var isVisible = false
     
+    
     var body: some View {
         NavigationView() {
             ZStack{

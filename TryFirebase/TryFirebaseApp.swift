@@ -20,7 +20,8 @@ struct TryFirebaseApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TryFirebaseHomePage()
+            LoadFromApiCollection()
+            //TryFirebaseHomePage()
         }
     }
 }

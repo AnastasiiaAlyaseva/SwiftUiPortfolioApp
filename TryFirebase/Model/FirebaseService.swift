@@ -1,9 +1,14 @@
+import SwiftUI
 import Firebase
 import FirebaseFirestore
 
-class FirebaseService: ObservableObject {
+class FirebaseService {
     
-    var storage = Storage()    
+    var storage = Storage()
+    
+    //
+    var storageTest: Storage
+    
     private let firestore = Firestore.firestore()
     
     func loadImageFromFirebase(){
@@ -15,6 +20,10 @@ class FirebaseService: ObservableObject {
                     if let imageUrl = document.data()["image"] as? String {
                         ImageLoader().loadImage(from: imageUrl) { data in
                             self.storage.imageDatas.append(data)
+                            print(self.storage.imageDatas.count)
+                            
+                            
+                            self.storageTest.testData.append(self.storage.imageDatas.count)
                         }
                     }
                 }
@@ -22,4 +31,8 @@ class FirebaseService: ObservableObject {
         }
     }
     
+    init(storage: Storage = Storage(), storageTest: Storage) {
+        self.storage = storage
+        self.storageTest = storageTest
+    }
 }
