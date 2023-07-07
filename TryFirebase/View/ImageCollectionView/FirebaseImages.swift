@@ -1,14 +1,14 @@
 import SwiftUI
 
-struct LoadFromApiCollection: View {
+struct FirebaseImages: View {
     
     @StateObject private var imageStorage = Storage()
     
-    var firebaseService: FirebaseService {
-        return FirebaseService( imageStorage: imageStorage)
+    private var firebaseService: FirebaseService {
+        return FirebaseService(imageStorage: imageStorage)
     }
     
-    @State var gridLayout: [GridItem] = [GridItem()]
+    @State private var gridLayout: [GridItem] = [GridItem()]
     
     var body: some View {
         VStack{
@@ -37,8 +37,8 @@ struct LoadFromApiCollection: View {
     
 }
 
-struct LoadFromApiCollection_Previews: PreviewProvider {
+struct FirebaseImages_Previews: PreviewProvider {
     static var previews: some View {
-        LoadFromApiCollection()
+        FirebaseImages()
     }
 }

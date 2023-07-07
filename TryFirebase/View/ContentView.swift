@@ -8,8 +8,8 @@ struct TryFirebaseHomePage: View {
     ]
     
     private let devName = "Anastasiia"
-    @State private var isVisible = false
     
+    @State private var isVisible = false
     
     var body: some View {
         NavigationView() {
@@ -55,8 +55,8 @@ struct TryFirebaseHomePage: View {
                     .padding(.top, 50)
                     .padding(.bottom,30)
                     
-                    NavigationLink(destination:LoadFromApiCollection()) {
-                        Label("Load images from API", systemImage: "gamecontroller")
+                    NavigationLink(destination:FirebaseImages()) {
+                        Label("Load images from Firebase", systemImage: "gamecontroller")
                     }
                     Spacer ()
                     Text("@2023")

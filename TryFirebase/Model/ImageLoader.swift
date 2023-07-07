@@ -3,9 +3,6 @@ import Combine
 
 class ImageLoader: ObservableObject {
     
-    @Published var imageData = Data()
-    @Published var imageDatas = [Data]()
-    
     func loadImage(from url: String, completion: @escaping (Data)->()) {
         guard let imageURL = URL(string: url) else {
             return
@@ -22,26 +19,10 @@ class ImageLoader: ObservableObject {
         }
     }
     
-    
-    func loadImage(from url: String) {
-        guard let imageURL = URL(string: url) else {
-            return
-        }
-        
-        DispatchQueue.global().async {
-            if let data = try? Data(contentsOf: imageURL) {
-                DispatchQueue.main.async {
-                    self.imageData = data
-                    self.imageDatas.append(data)
-                }
-            } else {
-                print("url is not correct \(imageURL)")
-            }
-        }
-    }
 }
 
-
+// Not using now in the app
+// loading via URLSession
 class ImageLoader2: ObservableObject {
     
     @Published var imageData = Data()

@@ -4,12 +4,14 @@ import FirebaseFirestore
 
 class FirebaseService {
     
-    var storage = Storage()
-    var imageStorage: Storage
-    
+    private var imageStorage: Storage
     private let firestore = Firestore.firestore()
     
-    func loadImageFromFirebase(){
+    init(imageStorage: Storage) {
+        self.imageStorage = imageStorage
+    }
+    
+    func loadImageFromFirebase() {
         firestore.collection("image").getDocuments{ (querySnapshot,error) in
             if let error = error {
                 print("Error getting documents data: \(error)")
@@ -23,10 +25,5 @@ class FirebaseService {
                 }
             }
         }
-    }
-    
-    init(storage: Storage = Storage(), imageStorage: Storage) {
-        self.storage = storage
-        self.imageStorage = imageStorage
     }
 }

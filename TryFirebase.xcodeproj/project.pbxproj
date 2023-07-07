@@ -14,7 +14,7 @@
 		B53AF69E2A26953C0072682A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF69D2A26953C0072682A /* FirebaseFirestore */; };
 		B53AF6A02A26953C0072682A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF69F2A26953C0072682A /* FirebaseStorage */; };
 		B53AF6A22A26A3780072682A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AF6A12A26A3780072682A /* Storage.swift */; };
-		B56D77AC2A0B9ABA0052FDFF /* LoadFromApiCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D77AB2A0B9ABA0052FDFF /* LoadFromApiCollection.swift */; };
+		B56D77AC2A0B9ABA0052FDFF /* FirebaseImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D77AB2A0B9ABA0052FDFF /* FirebaseImages.swift */; };
 		B57EE94329E16CB900489FC8 /* ContactForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57EE94229E16CB900489FC8 /* ContactForm.swift */; };
 		B58E7B8D29CF3BE800221EFD /* TryFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E7B8C29CF3BE800221EFD /* TryFirebaseApp.swift */; };
 		B58E7B8F29CF3BE800221EFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E7B8E29CF3BE800221EFD /* ContentView.swift */; };
@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		B53AF6A12A26A3780072682A /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		B56D77AB2A0B9ABA0052FDFF /* LoadFromApiCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFromApiCollection.swift; sourceTree = "<group>"; };
+		B56D77AB2A0B9ABA0052FDFF /* FirebaseImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImages.swift; sourceTree = "<group>"; };
 		B57EE94229E16CB900489FC8 /* ContactForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactForm.swift; sourceTree = "<group>"; };
 		B58E7B8929CF3BE800221EFD /* TryFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58E7B8C29CF3BE800221EFD /* TryFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryFirebaseApp.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		B5D170D92A570C9100061FE6 /* ImageCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				B56D77AB2A0B9ABA0052FDFF /* LoadFromApiCollection.swift */,
+				B56D77AB2A0B9ABA0052FDFF /* FirebaseImages.swift */,
 			);
 			path = ImageCollectionView;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 				B5912DD42A51DC040033B8E6 /* ImageLoader.swift in Sources */,
 				B58E7B8D29CF3BE800221EFD /* TryFirebaseApp.swift in Sources */,
 				B5912DD62A51DCB40033B8E6 /* FirebaseService.swift in Sources */,
-				B56D77AC2A0B9ABA0052FDFF /* LoadFromApiCollection.swift in Sources */,
+				B56D77AC2A0B9ABA0052FDFF /* FirebaseImages.swift in Sources */,
 				B53AF6A22A26A3780072682A /* Storage.swift in Sources */,
 				B5912DD82A51E0820033B8E6 /* MailView.swift in Sources */,
 			);
