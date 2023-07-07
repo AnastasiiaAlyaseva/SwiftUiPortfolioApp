@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5100F162A16574300A5DD42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5100F152A16574300A5DD42 /* GoogleService-Info.plist */; };
 		B53AF6952A2694B40072682A /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF6942A2694B40072682A /* iPhoneNumberField */; };
 		B53AF6982A26953C0072682A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF6972A26953C0072682A /* FirebaseAnalytics */; };
 		B53AF69A2A26953C0072682A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF6992A26953C0072682A /* FirebaseAuth */; };
@@ -15,26 +14,34 @@
 		B53AF69E2A26953C0072682A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF69D2A26953C0072682A /* FirebaseFirestore */; };
 		B53AF6A02A26953C0072682A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B53AF69F2A26953C0072682A /* FirebaseStorage */; };
 		B53AF6A22A26A3780072682A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AF6A12A26A3780072682A /* Storage.swift */; };
-		B56D77AC2A0B9ABA0052FDFF /* AppleApiCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D77AB2A0B9ABA0052FDFF /* AppleApiCollection.swift */; };
+		B56D77AC2A0B9ABA0052FDFF /* FirebaseImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D77AB2A0B9ABA0052FDFF /* FirebaseImages.swift */; };
 		B57EE94329E16CB900489FC8 /* ContactForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57EE94229E16CB900489FC8 /* ContactForm.swift */; };
 		B58E7B8D29CF3BE800221EFD /* TryFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E7B8C29CF3BE800221EFD /* TryFirebaseApp.swift */; };
 		B58E7B8F29CF3BE800221EFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E7B8E29CF3BE800221EFD /* ContentView.swift */; };
 		B58E7B9129CF3BEA00221EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58E7B9029CF3BEA00221EFD /* Assets.xcassets */; };
 		B58E7B9429CF3BEA00221EFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58E7B9329CF3BEA00221EFD /* Preview Assets.xcassets */; };
-		B58E7B9B29CF3C3E00221EFD /* SwiftCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E7B9A29CF3C3E00221EFD /* SwiftCard.swift */; };
+		B5912DD42A51DC040033B8E6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5912DD32A51DC040033B8E6 /* ImageLoader.swift */; };
+		B5912DD62A51DCB40033B8E6 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5912DD52A51DCB40033B8E6 /* FirebaseService.swift */; };
+		B5912DD82A51E0820033B8E6 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5912DD72A51E0820033B8E6 /* MailView.swift */; };
+		B5912DDA2A51E4040033B8E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5912DD92A51E4040033B8E6 /* GoogleService-Info.plist */; };
+		B5D765512A557FD8002A4342 /* EditFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D765502A557FD8002A4342 /* EditFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B5100F152A16574300A5DD42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B53AF6A12A26A3780072682A /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		B56D77AB2A0B9ABA0052FDFF /* AppleApiCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleApiCollection.swift; sourceTree = "<group>"; };
+		B56D77AB2A0B9ABA0052FDFF /* FirebaseImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImages.swift; sourceTree = "<group>"; };
 		B57EE94229E16CB900489FC8 /* ContactForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactForm.swift; sourceTree = "<group>"; };
 		B58E7B8929CF3BE800221EFD /* TryFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58E7B8C29CF3BE800221EFD /* TryFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryFirebaseApp.swift; sourceTree = "<group>"; };
 		B58E7B8E29CF3BE800221EFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B58E7B9029CF3BEA00221EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B58E7B9329CF3BEA00221EFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B58E7B9A29CF3C3E00221EFD /* SwiftCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCard.swift; sourceTree = "<group>"; };
+		B5912DD32A51DC040033B8E6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = TryFirebase/Model/ImageLoader.swift; sourceTree = SOURCE_ROOT; };
+		B5912DD52A51DCB40033B8E6 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		B5912DD72A51E0820033B8E6 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		B5912DD92A51E4040033B8E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5D765502A557FD8002A4342 /* EditFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFieldView.swift; sourceTree = "<group>"; };
+		B5D765522A559A12002A4342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,14 +80,12 @@
 		B58E7B8B29CF3BE800221EFD /* TryFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				B5D765522A559A12002A4342 /* Info.plist */,
 				B58E7B8C29CF3BE800221EFD /* TryFirebaseApp.swift */,
-				B58E7B8E29CF3BE800221EFD /* ContentView.swift */,
-				B56D77AB2A0B9ABA0052FDFF /* AppleApiCollection.swift */,
-				B5100F152A16574300A5DD42 /* GoogleService-Info.plist */,
+				B5912DB52A51D9BB0033B8E6 /* View */,
+				B5912DB62A51D9F20033B8E6 /* Model */,
+				B5912DD92A51E4040033B8E6 /* GoogleService-Info.plist */,
 				B58E7B9029CF3BEA00221EFD /* Assets.xcassets */,
-				B58E7B9A29CF3C3E00221EFD /* SwiftCard.swift */,
-				B57EE94229E16CB900489FC8 /* ContactForm.swift */,
-				B53AF6A12A26A3780072682A /* Storage.swift */,
 				B58E7B9229CF3BEA00221EFD /* Preview Content */,
 			);
 			path = TryFirebase;
@@ -92,6 +97,44 @@
 				B58E7B9329CF3BEA00221EFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5912DB52A51D9BB0033B8E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B58E7B8E29CF3BE800221EFD /* ContentView.swift */,
+				B5D170D82A570C6400061FE6 /* MailView */,
+				B5D170D92A570C9100061FE6 /* ImageCollectionView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5912DB62A51D9F20033B8E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5912DD32A51DC040033B8E6 /* ImageLoader.swift */,
+				B53AF6A12A26A3780072682A /* Storage.swift */,
+				B5912DD52A51DCB40033B8E6 /* FirebaseService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5D170D82A570C6400061FE6 /* MailView */ = {
+			isa = PBXGroup;
+			children = (
+				B5D765502A557FD8002A4342 /* EditFieldView.swift */,
+				B5912DD72A51E0820033B8E6 /* MailView.swift */,
+				B57EE94229E16CB900489FC8 /* ContactForm.swift */,
+			);
+			path = MailView;
+			sourceTree = "<group>";
+		};
+		B5D170D92A570C9100061FE6 /* ImageCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B56D77AB2A0B9ABA0052FDFF /* FirebaseImages.swift */,
+			);
+			path = ImageCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58E7B9429CF3BEA00221EFD /* Preview Assets.xcassets in Resources */,
+				B5912DDA2A51E4040033B8E6 /* GoogleService-Info.plist in Resources */,
 				B58E7B9129CF3BEA00221EFD /* Assets.xcassets in Resources */,
-				B5100F162A16574300A5DD42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,12 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D765512A557FD8002A4342 /* EditFieldView.swift in Sources */,
 				B57EE94329E16CB900489FC8 /* ContactForm.swift in Sources */,
-				B58E7B9B29CF3C3E00221EFD /* SwiftCard.swift in Sources */,
 				B58E7B8F29CF3BE800221EFD /* ContentView.swift in Sources */,
+				B5912DD42A51DC040033B8E6 /* ImageLoader.swift in Sources */,
 				B58E7B8D29CF3BE800221EFD /* TryFirebaseApp.swift in Sources */,
-				B56D77AC2A0B9ABA0052FDFF /* AppleApiCollection.swift in Sources */,
+				B5912DD62A51DCB40033B8E6 /* FirebaseService.swift in Sources */,
+				B56D77AC2A0B9ABA0052FDFF /* FirebaseImages.swift in Sources */,
 				B53AF6A22A26A3780072682A /* Storage.swift in Sources */,
+				B5912DD82A51E0820033B8E6 /* MailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +360,7 @@
 				DEVELOPMENT_TEAM = QGN945XQUG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TryFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -343,7 +389,7 @@
 				DEVELOPMENT_TEAM = QGN945XQUG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TryFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
