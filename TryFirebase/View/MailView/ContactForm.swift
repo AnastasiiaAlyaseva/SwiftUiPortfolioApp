@@ -67,7 +67,7 @@ struct ContactForm: View {
             .navigationTitle("Send me a message 📧")
         }
     }
-
+    
     func sendFormEmail() {
         isShowingMailView = true
     }

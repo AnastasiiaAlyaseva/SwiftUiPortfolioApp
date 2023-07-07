@@ -1,6 +1,5 @@
 import SwiftUI
 
-// This is our main Structure in the file that the root file (TryFirebaseApp.swift) will access as the main entry point
 struct TryFirebaseHomePage: View {
     
     private let colors = [
@@ -75,8 +74,6 @@ struct TryFirebaseHomePage: View {
 }
 
 
-// Without a PreviewProvider, we cant build the main Structure of this swift file.
-// Meaning we cant build the UI and display it on the app screen
 struct TryFirebaseHomePage_Bulder:PreviewProvider{
     static var previews: some View{
         TryFirebaseHomePage()

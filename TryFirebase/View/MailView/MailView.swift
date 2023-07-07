@@ -17,12 +17,7 @@ struct MailView: UIViewControllerRepresentable {
     }
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController{
-        // This line of code creates a new instance of MFMailComposeViewController,
-        // which is a view controller for displaying a pre-populated email composition interface.
         let mailComposeViewController = MFMailComposeViewController()
-        
-        //This line of code creates a new instance of MFMailComposeViewController,
-        // which is a view controller for displaying a pre-populated email composition interface.
         mailComposeViewController.mailComposeDelegate = context.coordinator
         mailComposeViewController.setSubject("Message From \(name)")
         mailComposeViewController.setMessageBody(message, isHTML: false)

@@ -5,7 +5,7 @@ class ImageLoader: ObservableObject {
     
     @Published var imageData = Data()
     @Published var imageDatas = [Data]()
-        
+    
     func loadImage(from url: String, completion: @escaping (Data)->()) {
         guard let imageURL = URL(string: url) else {
             return
@@ -53,7 +53,7 @@ class ImageLoader2: ObservableObject {
         guard let imageURL = URL(string: url) else {
             return
         }
-
+        
         DispatchQueue.global().async {
             if let data = try? Data(contentsOf: imageURL) {
                 DispatchQueue.main.async {
@@ -76,14 +76,14 @@ class ImageLoader2: ObservableObject {
                 print("Error getting documents data: \(String(describing: error))")
                 return
             }
-
+            
             if let data = data {
                 DispatchQueue.main.async {
                     self.imageData = data
                 }
             }
         }.resume()
-
+        
         cancellable = URLSession.shared.dataTaskPublisher(for: imageURL)
             .map{$0.data}
             .replaceError(with: Data())

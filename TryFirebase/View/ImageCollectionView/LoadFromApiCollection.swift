@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct LoadFromApiCollection: View {
-
-    @StateObject private var storageTest = Storage()
+    
+    @StateObject private var imageStorage = Storage()
     
     var firebaseService: FirebaseService {
-        return FirebaseService( storageTest: storageTest)
+        return FirebaseService( imageStorage: imageStorage)
     }
     
     @State var gridLayout: [GridItem] = [GridItem()]
@@ -13,27 +13,18 @@ struct LoadFromApiCollection: View {
     var body: some View {
         VStack{
             ScrollView {
-//                LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
-//                    ForEach(firebaseService.storage.imageDatas.indices, id: \.self) { index in
-//                        if let uiImage = UIImage(data: firebaseService.storage.imageDatas[index]) {
-//                            Image(uiImage: uiImage)
-//                                .resizable()
-//                                .scaledToFill()
-//                                .frame(height: 200)
-//                                .cornerRadius(10)
-//                                .shadow(color: Color.primary.opacity(0.3), radius: 1)
-//                        } else {
-//                            Text("Loading Image Data! Please wait!")
-//                        }
-//
-//                    }
-//                }
-//                .padding(.all, 10)
-                
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
-                    ForEach(storageTest.testData.indices, id: \.self) { index in
-                        let data = storageTest.testData[index]
-                        Text("item = \(data)")
+                    ForEach(imageStorage.imageDatas.indices, id: \.self) { index in
+                        if let uiImage = UIImage(data: imageStorage.imageDatas[index]) {
+                            Image(uiImage: uiImage)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(height: 200)
+                                .cornerRadius(10)
+                                .shadow(color: Color.primary.opacity(0.3), radius: 1)
+                        } else {
+                            Text("Loading Image Data! Please wait!")
+                        }
                     }
                 }
                 .padding(.all, 10)

@@ -5,9 +5,7 @@ import FirebaseFirestore
 class FirebaseService {
     
     var storage = Storage()
-    
-    //
-    var storageTest: Storage
+    var imageStorage: Storage
     
     private let firestore = Firestore.firestore()
     
@@ -19,11 +17,7 @@ class FirebaseService {
                 for document in querySnapshot!.documents {
                     if let imageUrl = document.data()["image"] as? String {
                         ImageLoader().loadImage(from: imageUrl) { data in
-                            self.storage.imageDatas.append(data)
-                            print(self.storage.imageDatas.count)
-                            
-                            
-                            self.storageTest.testData.append(self.storage.imageDatas.count)
+                            self.imageStorage.imageDatas.append(data)
                         }
                     }
                 }
@@ -31,8 +25,8 @@ class FirebaseService {
         }
     }
     
-    init(storage: Storage = Storage(), storageTest: Storage) {
+    init(storage: Storage = Storage(), imageStorage: Storage) {
         self.storage = storage
-        self.storageTest = storageTest
+        self.imageStorage = imageStorage
     }
 }
