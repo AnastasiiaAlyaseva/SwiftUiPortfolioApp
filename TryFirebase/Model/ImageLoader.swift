@@ -53,7 +53,7 @@ class ImageLoader2: ObservableObject {
         }
         
         URLSession.shared.dataTask(with: imageURL) { data, response, error in
-            guard error != nil else {
+            if let error = error {
                 print("Error getting documents data: \(String(describing: error))")
                 return
             }
